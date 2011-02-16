@@ -1,0 +1,17 @@
+<!ENTITY visibility.ClickToActivateVisibility "Click to activate Visibility">
+<!ENTITY visibility.Opacity "Opacity">
+<!ENTITY visibility.None "None">
+<!ENTITY visibility.Quarter "Quarter">
+<!ENTITY visibility.Half "Half">
+<!ENTITY visibility.ThreeQuarters "Three quarters">
+<!ENTITY visibility.Full "Full">
+<!ENTITY visibility.Size "Size">
+<!ENTITY visibility.Small "Small">
+<!ENTITY visibility.Medium "Medium">
+<!ENTITY visibility.Large "Large">
+<!ENTITY visibility.Full "Fullscreen">
+<!ENTITY visibility.Mode "Mode">
+<!ENTITY visibility.Immediate "Immediate">
+<!ENTITY visibility.Fade "Fade">
+<!ENTITY visibility.Options "Options">
+<!ENTITY visibility.FootNotes "Consider aspect ratio">

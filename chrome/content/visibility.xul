@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE window SYSTEM "chrome://visibility/locale/visibility.dtd">
+<?xml-stylesheet href="chrome://visibility/skin/visibility.css" type="text/css"?>
+<overlay id="visibility-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml">
+    <script type="application/x-javascript" src="chrome://visibility/content/visibility.js"/>
+    <script type="application/x-javascript" src="chrome://visibility/content/scripts/lights.js"/>
+    <keyset>
+        <key id="action-key" modifiers="accel alt" key="r" oncommand="Visibility.enableVisibility(event);" />
+    </keyset>
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="toolbar-button" label="Visibility" tooltiptext="&visibility.ClickToActivateVisibility;" class="toolbarbutton-1" type="menu-button" oncommand="if(event.target==this) Visibility.enableVisibility(event);">
+            <panel id="-toolbar-menu" oncommand="Visibility.enableVisibility(event);" style="list-style-image:none;" onpopupshowing="Visibility.onVisibilityPanelShowing(event);">
+                <hbox id="visibility-toolbarpanelbox">
+                    <groupbox>
+                        <caption label="&visibility.Opacity;"/>
+                        <radiogroup id="opacity-group-tb" oncommand="Visibility.updateOpacityRadioGroup(event)">
+                            <radio id="visibility-toolbar-none-opacity" label="&visibility.None;" value="none" selected="true"/>
+                            <radio id="visibility-toolbar-quarter-opacity" label="&visibility.Quarter;" value="quarter"/>
+                            <radio id="visibility-toolbar-half-opacity" label="&visibility.Half;" value="half"/>
+                            <radio id="visibility-toolbar-threequarters-opacity" label="&visibility.ThreeQuarters;" value="threequarters"/>
+                            <radio id="visibility-toolbar-full-opacity" label="&visibility.Full;" value="full"/>
+                        </radiogroup>
+                    </groupbox>
+                    <groupbox>
+                        <caption label="&visibility.Size;"/>
+                        <radiogroup id="size-group-tb" oncommand="Visibility.updateSizeRadioGroup(event)">
+                            <radio id="visibility-toolbar-small-size" label="&visibility.Small;" value="small"/>
+                            <radio id="visibility-toolbar-medium-size" label="&visibility.Medium;" value="medium" selected="true"/>
+                            <radio id="visibility-toolbar-large-size" label="&visibility.Large;" value="large"/>
+                            <radio id="visibility-toolbar-full-size" label="&visibility.Full;" value="full"/>
+                        </radiogroup>
+                    </groupbox>
+                    <groupbox>
+                        <caption label="&visibility.Mode;"/>
+                        <radiogroup id="mode-group-tb" oncommand="Visibility.updateModeRadioGroup(event)">
+                            <radio id="visibility-toolbar-immediate-mode" label="&visibility.Immediate;" value="immediate"/>
+                            <radio id="visibility-toolbar-fade-mode" label="&visibility.Fade;" value="fade" selected="true"/>
+                        </radiogroup>
+                    </groupbox>
+                </hbox>
+                <groupbox>
+                    <caption label="&visibility.Options;"/>
+                    <radiogroup id="keepar-group-tb" oncommand="Visibility.updatekeepARGroup(event)">
+                        <checkbox id="visibility-toolbar-options-footnotes"  class="visibility-options-footnotes" label="&visibility.FootNotes;" value="x-narrow"/>
+                    </radiogroup>
+                </groupbox>
+            </panel>
+        </toolbarbutton>
+    </toolbarpalette>
+    <statusbar id="status-bar">
+        <statusbarpanel id="visibility-panel" mousethrough="never" context="statusbar-menu">
+           <image id="statusbar-icon" onclick="Visibility.enableVisibility(event);" tooltiptext="&visibility.ClickToActivateVisibility;"/>
+           <panel id="statusbar-menu" oncommand="Visibility.enableVisibility(event);"  onpopupshowing="Visibility.onVisibilityPanelShowing(event);">
+               <hbox id="visibility-statusbarpanelbox">
+                   <groupbox>
+                      <caption label="&visibility.Opacity;"/>
+                      <radiogroup id="opacity-group-sb" oncommand="Visibility.updateOpacityRadioGroup(event)">
+                          <radio id="visibility-statusbar-none-opacity" label="&visibility.None;" value="none" selected="true"/>
+                          <radio id="visibility-statusbar-quarter-opacity" label="&visibility.Quarter;" value="quarter"/>
+                          <radio id="visibility-statusbar-half-opacity" label="&visibility.Half;" value="half"/>
+                          <radio id="visibility-statusbar-threequarters-opacity" label="&visibility.ThreeQuarters;" value="threequarters"/>
+                          <radio id="visibility-statusbar-full-opacity" label="&visibility.Full;" value="full"/>
+                      </radiogroup>
+                  </groupbox>
+                  <groupbox>
+                      <caption label="&visibility.Size;"/>
+                      <radiogroup id="size-group-sb" oncommand="Visibility.updateSizeRadioGroup(event)">
+                          <radio id="visibility-statusbar-small-size" label="&visibility.Small;" value="small"/>
+                          <radio id="visibility-statusbar-medium-size" label="&visibility.Medium;" value="medium" selected="true"/>
+                          <radio id="visibility-statusbar-large-size" label="&visibility.Large;" value="large"/>
+                          <radio id="visibility-statusbar-full-size" label="&visibility.Full;" value="full"/>
+                      </radiogroup>
+                  </groupbox>
+                  <groupbox>
+                      <caption label="&visibility.Mode;"/>
+                      <radiogroup id="mode-group-sb" oncommand="Visibility.updateModeRadioGroup(event)">
+                          <radio id="visibility-statusbar-immediate-mode" label="&visibility.Immediate;" value="immediate"/>
+                          <radio id="visibility-statusbar-fade-mode" label="&visibility.Fade;" value="fade" selected="true"/>
+                      </radiogroup>
+                  </groupbox>
+            </hbox>
+            <groupbox>
+                <caption label="&visibility.Options;"/>
+                <radiogroup id="keepar-group-sb" oncommand="Visibility.updatekeepARGroup(event)">
+                    <checkbox id="visibility-statusbar-options-footnotes"  class="visibility-options-footnotes" label="&visibility.FootNotes;" value="x-narrow"/>
+                </radiogroup>
+            </groupbox>
+            </panel>
+        </statusbarpanel>
+    </statusbar>
+</overlay>

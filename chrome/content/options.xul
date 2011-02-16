@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE page SYSTEM "chrome://visibility/locale/options.dtd">
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script type="application/javascript" src="options.js"/>
+    <groupbox  align="center">
+        <caption label="&visibility.keyboard.shortcuts.caption;"/>
+        <description value="&visibility.keyboard.shortcuts.label;"/>
+        <separator/>
+        <grid class="scroll">
+            <columns>
+                <column/>
+                <spacer class="small-spacer"/>
+                <column/>
+            </columns>
+            <rows id="visibility-key-rows">
+                <row align="center">
+                    <hbox style="width:175px">
+                        <label>Visibility Shortcut :</label>
+                    </hbox>
+                    <hbox align="center">
+                        <description style="width:60px"
+                                     id="hotkeyLabel">Ctrl+Alt+</description>
+                        <textbox id="hotkeyField" value="" maxlength="1" size="1"
+                                 oninput="this.value=this.value.toUpperCase()" />
+                    </hbox>
+                </row>
+           </rows>
+        </grid>
+        <hbox pack="end">
+            <button oncommand="Options.saveKeyboardShortcutChanges(event)">
+                <label>Save</label>
+            </button>
+            <button oncommand="window.close()">
+                <label>Cancel</label>
+            </button>
+        </hbox>
+    </groupbox>
+</page>

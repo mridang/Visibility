@@ -1,0 +1,12 @@
+#statusbar-icon {
+    list-style-image:url('chrome://visibility/skin/statusbaricon.png');
+    cursor:pointer;
+}
+
+#toolbar-button {
+    list-style-image:url('chrome://visibility/skin/toolbaricon.png');
+}
+
+toolbar[iconsize="small"] #toolbar-button {
+    list-style-image: url('chrome://visibility/skin/statusbaricon.png');
+} 

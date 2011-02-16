@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <Description about="urn:mozilla:install-manifest">
+
+        <em:id>{6005d9b1-d115-485a-a92a-3f6453ca3fe2}</em:id>
+        <em:type>2</em:type>
+        <em:name>Visibility</em:name>
+        <em:version>1.2</em:version>
+        <em:creator>Mridang Agarwalla</em:creator>
+        <em:description>Visibility is a simple tool that makes viewing videos on the Web more enjoyable by removing the clutter around what you are viewing.</em:description>
+        <em:iconURL>chrome://visibility/skin/addonicon.png</em:iconURL>
+        <em:optionsURL>chrome://visibility/content/options.xul</em:optionsURL>
+        <em:translator>Ismo - Finnish</em:translator>
+
+        <em:targetApplication>
+            <Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
+                <em:minVersion>3.0</em:minVersion>
+                <em:maxVersion>3.7a6pre</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+
+        <em:targetApplication>
+            <Description>
+                <em:id>{0fde5d62-f25b-11df-be20-0291dfd72085}</em:id>
+                <em:minVersion>2.0</em:minVersion>
+                <em:maxVersion>2.5.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+
+    </Description>
+</RDF>

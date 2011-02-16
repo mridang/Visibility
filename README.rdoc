@@ -1,0 +1,49 @@
+= Visibility
+
+Copyright (c) 2010 Mridang Agarwalla
+
+Remove page clutter while watching embedded videos.
+
+Visibility removes all the page clutter when watching videos online so that you
+can focus on the video without being distracted with anything else on the page.
+
+== Installation
+
+Download the extension to your computer. If a download option isn't available,
+right click on the extension's install link and select "Save Link As..".
+Be sure not to change the file extension. A Firefox extension will be an .XPI
+file. Once you have downloaded the extension, drag the extension to the instance
+of Firefox on the taskbar. Wait for Firefox to appear and then drop onto the
+browser window. From the popu window that appears choose "Install Now".
+
+== Configuration
+
+Right-clicking on the little 'V' icon in the Firefox status-bar will bring up a
+popup with the necessary settings.
+
+== TODO
+
+This is beta software. Several things are on the todo list. if you'd like to see
+a new feature, please help by contributing.
+
+== Contributing
+
+Pull requests will be ignored if they don't follow the Git convention of
+a 50 character or less subject and optional paragraphs wrapped to 72
+characters.
+
+If I provide you with feedback on your pull request, generally you should
+squash your changes into the previous commit when submitting a second request.
+
+== License
+
+This program is released under the GNU GPL.
+
+== Contact
+
+Feel free to request new features or provide bug reports.
+You can find my email address here.
+
+== Disclaimer
+
+No warranties, expressed or implied.

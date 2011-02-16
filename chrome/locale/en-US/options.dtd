@@ -1,0 +1,3 @@
+<!ENTITY visibility.keyboard.shortcuts.caption "Keyboard Shortcuts">
+<!ENTITY visibility.keyboard.shortcuts.label "Any changes to keyboard shortcuts require a restart of the browser.">
+<!ENTITY visibility.tools.shortcuts.label "The tools keyboard shortcuts can be changed in the tools visibility pane.">

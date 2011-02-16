@@ -1,0 +1,5 @@
+content	visibility	chrome/content/ contentaccessible=yes
+overlay	chrome://browser/content/browser.xul	chrome://visibility/content/visibility.xul
+skin	visibility	classic/1.0	chrome/skin/classic/
+style	chrome://global/content/customizeToolbar.xul	chrome://visibility/skin/visibility.css
+locale	visibility	en-US	chrome/locale/en-US/
